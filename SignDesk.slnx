@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SignDesk.Api/SignDesk.Api.csproj" />
+    <Project Path="src/SignDesk.Domain/SignDesk.Domain.csproj" />
+    <Project Path="src/SignDesk.Infrastructure/SignDesk.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SignDesk.IntegrationTests/SignDesk.IntegrationTests.csproj" />
+    <Project Path="tests/SignDesk.UnitTests/SignDesk.UnitTests.csproj" />
+  </Folder>
+</Solution>
