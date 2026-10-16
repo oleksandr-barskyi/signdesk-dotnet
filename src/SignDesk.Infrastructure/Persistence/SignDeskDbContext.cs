@@ -37,6 +37,7 @@ public sealed class SignDeskDbContext(DbContextOptions<SignDeskDbContext> option
             b.Property(s => s.Name).HasMaxLength(200).IsRequired();
             b.Property(s => s.Status).HasConversion<string>().HasMaxLength(20);
             b.Property(s => s.DeclineReason).HasMaxLength(1000);
+            b.Property<uint>("Version").IsRowVersion();
             b.HasIndex(s => new { s.DocumentId, s.Email }).IsUnique();
         });
 
